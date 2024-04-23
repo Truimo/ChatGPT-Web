@@ -95,7 +95,6 @@ export class ClientApi {
   public llm: LLMApi;
 
   constructor(provider: ModelProvider = ModelProvider.GPT) {
-    this.llm = new ChatGPTApi(); return;
     switch (provider) {
       case ModelProvider.GeminiPro:
         this.llm = new GeminiProApi();
